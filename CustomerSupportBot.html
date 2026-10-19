@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multilingual Conversational FAQ & Customer Support Bot</title>
+  <link rel="stylesheet" href="CustomerSupportBot.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      🤖 Multilingual Conversational FAQ & Customer Support Bot
+    </header>
+
+    <!-- Intro -->
+    <section class="tab-content active">
+      <h2>Welcome to your AI-powered Customer Support Bot</h2>
+      <p>Ask questions about our business.</p>
+    </section>
+
+  </div>
+
+  <!-- ===============================
+       FLOATING CHATBOT
+  =============================== -->
+  <div id="chatWidget">
+
+    <!-- Toggle Button -->
+    <div id="chatToggle" onclick="toggleChat()">)🤖</div>
+
+    <!-- Chat Window -->
+    <div id="chatWindow">
+
+      <div class="chat-header">
+        🤖 Customer Support Bot
+      </div>
+
+      <!-- Chat Box -->
+      <div id="chatBox" class="chat-box"></div>
+
+      <!-- Input Area -->
+      <div class="chat-input-area">
+        <input 
+          id="chatInput" 
+          placeholder="Hi, how can I help you?" 
+        />
+        <button onclick="handleChat()">Send</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="CustomerSupportBot.js"></script>
+
+  <script>
+    // Toggle open/close
+    function toggleChat() {
+	  const chatWindow = document.getElementById("chatWindow");
+	  const toggle = document.getElementById("chatToggle");
+
+	  chatWindow.classList.toggle("open");
+
+	  // Change icon
+	  if (chatWindow.classList.contains("open")) {
+		toggle.innerHTML = "✖"; // close icon
+	  } else {
+		toggle.innerHTML = "💬"; // chat icon
+	  }
+	}
+
+    // Press ENTER to send
+    document.addEventListener("DOMContentLoaded", function () {
+      const input = document.getElementById("chatInput");
+
+      input.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          handleChat();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

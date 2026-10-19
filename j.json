@@ -1,0 +1,10 @@
+
+  {
+    "skillSets": {
+    "Data Entry": ["Excel & spreadsheets", "Data cleaning", "60+ WPM", "Detail-focused"],
+    "Admin Support": ["Scheduling", "Filing & records", "Customer follow-up", "Basic bookkeeping"],
+    "Typing": ["Transcription", "70+ WPM", "Document formatting", "Proofreading"],
+    "Customer Care": ["Phone support", "Conflict resolution", "Order tracking", "Multilingual"]
+  },
+    "script": "const btn = document.getElementById('demoBtn');\n  const cvName = document.getElementById('cvName');\n  const cvLine = document.getElementById('cvLine');\n  const cvSkills = document.getElementById('cvSkills');\n  const cvPlaceholder = document.getElementById('cvPlaceholder');\n  const cvStampWrap = document.getElementById('cvStampWrap');\n  const cvId = document.getElementById('cvId');\n\n  btn.addEventListener('click', () => {\n    const name = document.getElementById('demoName').value.trim() || 'Your name';\n    const skill = document.getElementById('demoSkill').value || 'Data Entry';\n    const years = document.getElementById('demoYears').value;\n    const town = document.getElementById('demoTown').value.trim();\n\n    cvPlaceholder.style.display = 'none';\n    cvStampWrap.classList.remove('show');\n    cvSkills.innerHTML = '';\n\n    cvName.textContent = name;\n    const yearsPart = years ? `${years} yr${years == 1 ? '' : 's'} experience` : 'New to the workforce';\n    const townPart = town ? ` · ${town}` : '';\n    cvLine.textContent = `${skill}${townPart} · ${yearsPart}`;\n\n    cvId.textContent = '#' + String(Math.floor(Math.random() * 900000) + 100000);\n\n    const pills = skillSets[skill] || skillSets[\"Data Entry\"];\n    pills.forEach((p, i) => {\n      const el = document.createElement('span');\n      el.className = 'cv-skill-pill';\n      el.textContent = p;\n      cvSkills.appendChild(el);\n      setTimeout(() => el.classList.add('show'), 150 + i * 120);\n    });\n\n    setTimeout(() => { cvStampWrap.classList.add('show'); }, 150 + pills.length * 120 + 250);\n  });"
+    }

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillsHub — Your skills, on record</title>
+<link rel="stylesheet" href="styles.css" >
+<link rel="stylesheet" href="CustomerSupportBot.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <div class="stamp-mark"><span>SH</span></div>
+      SkillsHub
+    </div>
+    <nav class="main-nav">
+      <a href="#problem">Problem</a>
+      <a href="#how">How it works</a>
+      <a href="#demo">Try it</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <a href="#cta" class="btn">Start my profile</a>
+  </div>
+</header>
+
+<main>
+  
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="tag hero-eyebrow">Low-data · works on any phone</span>
+        <h1>Your skills are real.<br>Now they're <em>on record</em>.</h1>
+        <p class="lede">Five short questions on your phone turn into a professional CV and skills profile — no software to learn, no trip to town, no time wasted.</p>
+        <div class="hero-ctas">
+          <a href="#cta" class="btn teal">Start my profile</a>
+          <a href="#how" class="btn ghost" style="border-color:#7C7868; color:var(--paper);">See how it works</a>
+        </div>
+        <div class="hero-note mono">No heavy images, no app to download — it runs in any browser.</div>
+      </div>
+      <div>
+        <div class="form-card">
+          <div class="fc-head"><span>Profile · Draft</span></div>
+          <div class="fc-field"><label>Full name</label><div class="val">Mmutle T.</div></div>
+          <div class="fc-field"><label>Can do</label><div class="val">Hospitality · Receptionist</div></div>
+          <div class="fc-field"><label>Location</label><div class="val">Soshanguve, Pretoria</div></div>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="problem">
+    <div class="wrap">
+    <div class="section-head">
+        <span class="tag">The problem</span>
+        <h2>Your skills are not being recognised</h2>
+        <picture><source srcset="" type="image/"><img src="" alt=""></picture>
+        <p>People in impoverished communities do this work every day — they just have no way to prove it to someone hiring.</p>
+      </div>
+      <div class="ledger">
+        <div class="ledger-item">
+          <span class="tag">Data</span>
+          <h3>Job sites cost data most can't spare</h3>
+          <p>Browsing listings, uploading documents, filling in long forms — it adds up to extra costs people don't have to lose.</p>
+          <div class="resolve">SkillsHub is built lightweight, start to finish.</div>
+        </div>
+        <div class="ledger-item">
+          <span class="tag">CV</span>
+          <h3>No one ever taught CV software</h3>
+          <p>A CV needs a layout, a printer, and know-how that was never part of anyone's schooling.</p>
+          <div class="resolve">Five answers become a finished, professional CV.</div>
+        </div>
+        <div class="ledger-item">
+          <span class="tag">Travel</span>
+          <h3>Town is a taxi fare away</h3>
+          <p>For some, getting help with a CV or an application means losing a day's wage just to travel there.</p>
+          <div class="resolve">Everything happens from the phone already in your pocket.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="how">
+    <div class="wrap">
+    <div class="section-head">
+      <span class="tag">How it works</span>
+      <h2>Four steps. About ten minutes.</h2>
+      <p>No typing skills required to get started — that's exactly what we're here to find and prove.</p>
+      </div>
+      <div class="steps">
+      <div class="step">
+        <div class="step-num mono">01</div>
+        <div><h3>Sign up</h3><p>Just a phone number. Takes about two minutes.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num mono">02</div>
+          <div><h3>Upload your ID and certificates</h3><p>Whatever you have — a photo from your phone is enough.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num mono">03</div>
+          <div><h3>Answer 5 simple questions</h3><p>About what you're good at and the work you've done before.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num mono">04</div>
+          <div><h3>Get matched and applied — automatically</h3><p>Build your CV and let the companies come to you.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="demo" class="demo-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">Try it</span>
+        <h2>Watch your profile get built.</h2>
+        <p>This is a preview of the real flow — fill in a few details and see the CV and the verification stamp appear.</p>
+      </div>
+      <div class="demo-grid">
+        <div class="demo-panel">
+          <h3>Step 03 · About your skills</h3>
+          <div class="field-row">
+            <label>Your name</label>
+            <input type="text" id="demoName" placeholder="e.g. Thabo M.">
+          </div>
+          <div class="field-row">
+            <label>What can you do?</label>
+             <input type= "text" id="demoSkill"> </input>
+          </div>
+          <div class="field-row">
+            <label>Years of experience</label>
+             <input type="number" id="demoYears" min="0" max="40" placeholder="e.g. 3">
+          </div>
+          <div class="field-row">
+            <label>Town</label>
+             <input type="text" id="demoTown" placeholder="e.g. Pretoria">
+          </div>
+        <div class="field-row">
+          <label>Education</label>
+            <input type="text" id="demoEducation"></input>
+        </div>
+          
+          <button class="btn teal" id="demoBtn" style="width:100%; text-align:center;">Generate my profile</button>
+         
+        </div>
+
+        <div class="cv-preview">
+          <div class="cv-top"><span>SkillsHub profile</span></div>
+          <div class="cv-name" id="cvName"></div>
+          <div class="cv-line" id="cvLine"></div>
+          <div class="cv-skills" id="cvSkills"></div>
+          <div class="cv-placeholder" id="cvPlaceholder">Fill in the form and generate a profile to preview it here.</div>
+          <div class="cv-stamp-wrap" id="cvStampWrap">
+            <div class="cv-stamp">VERIFIED<br>PROFILE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">How it makes money</span>
+        <h2>Workers pay nothing to apply. Ever.</h2>
+        <p>Matching and applying are always free for workers. Everyone else pays only once value has actually moved.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="receipt">
+          <div class="receipt-row">
+            <div><div class="who">Employer</div><div class="desc">Pays once they actually hire someone through SkillsHub. Nothing upfront, no monthly fee.</div></div>
+            <div class="amt">R50</div>
+          </div>
+          <div class="receipt-row">
+            <div><div class="who">Worker (optional)</div><div class="desc">A once-off upgrade for a premium PDF CV and ongoing job alerts.</div></div>
+            <div class="amt">R20</div>
+          </div>
+          <div class="receipt-row">
+            <div><div class="who">Partner platforms</div><div class="desc">A small commission for every qualified worker we send their way.</div></div>
+            <div class="amt">% commission</div>
+          </div>
+          <div class="receipt-total"><span>Cost to apply for a job</span><span>R0</span></div>
+        </div>
+        <div class="pricing-side">
+          <h3>Two sides, one ledger.</h3>
+          <p>Workers get found and hired without spending money they don't have. Companies get verified, work-ready candidates without running their own search. SkillsHub only earns when that match actually happens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="cta" class="cta-section">
+    <div class="wrap">
+      <h2>Put your skills on record.</h2>
+      <p>Two minutes on your phone is all it takes to start. No new software and no trip to town.</p>
+      <a href="#" class="btn teal">Start my profile</a>
+    </div>
+  </section>
+</main>
+<!-- ===============================
+       FLOATING CHATBOT
+  =============================== -->
+  <div id="chatWidget">
+
+    <!-- Toggle Button -->
+    <div id="chatToggle" onclick="toggleChat()">)🤖</div>
+
+    <!-- Chat Window -->
+    <div id="chatWindow">
+
+      <div class="chat-header">
+        🤖 Customer Support Bot
+      </div>
+
+      <!-- Chat Box -->
+      <div id="chatBox" class="chat-box"></div>
+
+      <!-- Input Area -->
+      <div class="chat-input-area">
+        <input 
+          id="chatInput" 
+          placeholder="Hi, how can I help you?" 
+        />
+        <button onclick="handleChat()">Send</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="CustomerSupportBot.js"></script>
+
+  <script>
+    // Toggle open/close
+    function toggleChat() {
+	  const chatWindow = document.getElementById("chatWindow");
+	  const toggle = document.getElementById("chatToggle");
+
+	  chatWindow.classList.toggle("open");
+
+	  // Change icon
+	  if (chatWindow.classList.contains("open")) {
+		toggle.innerHTML = "✖"; // close icon
+	  } else {
+		toggle.innerHTML = "💬"; // chat icon
+	  }
+	}
+
+    // Press ENTER to send
+    document.addEventListener("DOMContentLoaded", function () {
+      const input = document.getElementById("chatInput");
+
+      input.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          handleChat();
+        }
+      });
+    });
+  </script>
+
+<footer>
+  SkillsHub · Built for low data, real skills, and getting hired without upfront cost.
+</footer>
+
+
+</body>
+</html>
